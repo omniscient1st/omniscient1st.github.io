@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Ayang, masih ngambek aja nih?</h1>
+    <iframe
+      src="https://giphy.com/embed/xUOwFZmWUC2QDHKu4M"
+      width="400"
+      height="400"
+      frameborder="0"
+      class="giphy-embed"
+      allowfullscreen
+    ></iframe>
+    <h1>Maafin aku plisss</h1>
+    <button id="btn_mau" onclick="alert('Makasih ayang :D')">Iya</button>&nbsp;
+    <button id="btn_gamau" onclick="gamau(this)" style="position: absolute">
+      Ga
+    </button>
+  </body>
+  <script>
+    function gamau(id) {
+      var mau = document.getElementById("btn_mau");
+      var i = Math.floor(Math.random() * 300) + 1;
+      var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+      id.style.left = i + "px";
+      id.style.top = j + "px";
+    }
+  </script>
+</html>
